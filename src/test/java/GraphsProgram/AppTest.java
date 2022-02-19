@@ -14,7 +14,7 @@ public class AppTest {
      */
     int nroNodes = 9;
     int array[][] = { { 1, 3 }, { 1, 2 }, { 3, 7 }, { 1, 5 }, { 2, 9 }, { 2, 4 }, { 2, 5 }, { 5, 8 }, { 9, 4 },
-            { 4, 8 }, { 4, 0 }, { 0, 7 }, { 8, 7 }, { 8, 6 }, { 6, 3 } };
+            { 4, 8 }, { 4, 0 }, { 0, 7 }, { 8, 7 }, { 6, 3 }, { 8, 6 } };
 
     @Test
     public void shouldAnswerWithTrue() {
