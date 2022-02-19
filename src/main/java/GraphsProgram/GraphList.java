@@ -68,20 +68,20 @@ public class GraphList implements Graph {
   public ArrayList<Integer> bfs(int start) {
     ArrayList<Integer> result = new ArrayList<Integer>();
     boolean[] visited = new boolean[this.adjList.length];
-    ArrayList<Integer> q = new ArrayList<Integer>();
+    ArrayList<Integer> queue = new ArrayList<Integer>();
 
-    q.add(start);
+    queue.add(start);
     visited[start] = true;
 
-    int vis;
-    while (!q.isEmpty()) {
-      vis = q.get(0);
-      result.add(vis);
-      q.remove(q.get(0));
+    int vertex;
+    while (!queue.isEmpty()) {
+      vertex = queue.get(0);
+      result.add(vertex);
+      queue.remove(queue.get(0));
 
-      for (Integer i : this.adjList[vis]) {
+      for (Integer i : this.adjList[vertex]) {
         if (!visited[i]) {
-          q.add(i);
+          queue.add(i);
           visited[i] = true;
         }
       }
